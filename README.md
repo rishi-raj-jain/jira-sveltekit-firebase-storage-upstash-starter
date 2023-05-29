@@ -57,7 +57,7 @@ cp firebase-adminsdk.json.example firebase-adminsdk.json
 
 <img width="1512" alt="Screenshot 2023-05-29 at 8 10 10 PM" src="https://github.com/rishi-raj-jain/jira-sveltekit-firebase-storage-upstash-starter/assets/46300090/cd212ac7-5478-4383-897c-2e8d5c0956ca">
 
-<img width="1005" alt="Screenshot 2023-05-29 at 8 10 55 PM" src="https://github.com/rishi-raj-jain/jira-sveltekit-firebase-storage-upstash-starter/assets/46300090/58e5a23d-f12d-44d8-b3ae-f58225914605">
+<img width="1002" alt="Screenshot 2023-05-29 at 8 11 52 PM" src="https://github.com/rishi-raj-jain/jira-sveltekit-firebase-storage-upstash-starter/assets/46300090/df1c59a8-b3e7-4a43-b8ab-34629699c6db">
 
 ## Author
 
