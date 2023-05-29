@@ -1,6 +1,6 @@
 <h1 align="center">An open source alternative to Jira Kanban Board using SvelteKit, TailwindCSS, Upstash and Firebase Storage.</h1>
 
-<img width="1512" alt="Screenshot 2023-05-29 at 8 02 11 PM" src="https://github.com/rishi-raj-jain/jira-sveltekit-firebase-storage-upstash-starter/assets/46300090/396e07f9-2ddf-459f-bd60-4036ce3c57b6">
+<img width="1512" alt="Screenshot 2023-05-29 at 8 10 10 PM" src="https://github.com/rishi-raj-jain/jira-sveltekit-firebase-storage-upstash-starter/assets/46300090/cd212ac7-5478-4383-897c-2e8d5c0956ca">
 
 <p align="center">
   An open source alternative to Jira Kanban Board made with SvelteKit, Upstash, Firebase Storage and TailwindCSS
@@ -55,9 +55,9 @@ cp firebase-adminsdk.json.example firebase-adminsdk.json
 
 ## Screenshots
 
-<img width="1512" alt="Screenshot 2023-05-29 at 8 02 11 PM" src="https://github.com/rishi-raj-jain/jira-sveltekit-firebase-storage-upstash-starter/assets/46300090/396e07f9-2ddf-459f-bd60-4036ce3c57b6">
+<img width="1512" alt="Screenshot 2023-05-29 at 8 10 10 PM" src="https://github.com/rishi-raj-jain/jira-sveltekit-firebase-storage-upstash-starter/assets/46300090/cd212ac7-5478-4383-897c-2e8d5c0956ca">
 
-<img width="1512" alt="Screenshot 2023-05-29 at 8 04 55 PM" src="https://github.com/rishi-raj-jain/jira-sveltekit-firebase-storage-upstash-starter/assets/46300090/028920d6-e253-4c90-b678-f68e7982686b">
+<img width="1005" alt="Screenshot 2023-05-29 at 8 10 55 PM" src="https://github.com/rishi-raj-jain/jira-sveltekit-firebase-storage-upstash-starter/assets/46300090/58e5a23d-f12d-44d8-b3ae-f58225914605">
 
 ## Author
 
