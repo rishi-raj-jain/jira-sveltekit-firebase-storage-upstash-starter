@@ -14,6 +14,7 @@
 
 <p align="center">
   <a href="#introduction"><strong>Introduction</strong></a> ·
+  <a href="#screenshots"><strong>Screenshots</strong></a> ·
   <a href="#author"><strong>Author</strong></a>
 </p>
 <br/>
