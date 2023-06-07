@@ -9,8 +9,6 @@ import fireBaseConfig from '../../../../firebase-adminsdk.json'
 import { getDownloadURL, getStorage, ref, uploadBytes } from 'firebase/storage'
 
 export async function POST(event: RequestEvent) {
-	// Rate limit 2 uploads per minute
-	const ratelimitUpload = ratelimit(2, '60 s')
 	const user = await isAuth(event)
 	if (!user) {
 		return new Response(undefined, {
@@ -45,7 +43,8 @@ export async function POST(event: RequestEvent) {
 				}
 			})
 		}
-		const result = await ratelimitUpload.limit(`${user.session.user.email}_${taskID}`)
+		// Rate limit 2 uploads per minute
+		const result = await ratelimit.upload.limit(`${user.session.user.email}_${taskID}`)
 		if (!result.success) {
 			return new Response(JSON.stringify({ code: 0, error: `You can't upload more than 2 files per issue per minute.` }), {
 				status: 403,

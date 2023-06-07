@@ -28,8 +28,6 @@ export async function GET(event: RequestEvent) {
 }
 
 export async function POST(event: RequestEvent) {
-	// Rate limit 5 issues creation per minute
-	const ratelimitIssue = ratelimit(5, '60 s')
 	const user = await isAuth(event)
 	if (!user) {
 		return new Response(undefined, {
@@ -37,7 +35,8 @@ export async function POST(event: RequestEvent) {
 		})
 	}
 	if (user.session.user?.email) {
-		const result = await ratelimitIssue.limit(user.session.user.email)
+		// Rate limit 5 issues creation per minute
+		const result = await ratelimit.issues.limit(user.session.user.email)
 		if (!result.success) {
 			return new Response(JSON.stringify({ code: 0, error: `You can't create more than 5 issues per minute.` }), {
 				status: 403,

@@ -1,12 +1,13 @@
 import redis from './setup'
 import { Ratelimit } from '@upstash/ratelimit'
 
-type Unit = 'ms' | 's' | 'm' | 'h' | 'd'
-type Duration = `${number} ${Unit}` | `${number}${Unit}`
-
-export const ratelimit = (number: number, time: Duration) => {
-	return new Ratelimit({
-		redis: redis,
-		limiter: Ratelimit.fixedWindow(number, time)
+export const ratelimit = {
+	upload: new Ratelimit({
+		redis,
+		limiter: Ratelimit.slidingWindow(2, '60s')
+	}),
+	issues: new Ratelimit({
+		redis,
+		limiter: Ratelimit.slidingWindow(5, '60s')
 	})
 }
